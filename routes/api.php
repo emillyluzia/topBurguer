@@ -11,3 +11,5 @@ Route::get('/cliente', [ClienteController::class, 'index']);
 Route::post('/cliente', [ClienteController::class, 'store']);
 
 
+
+

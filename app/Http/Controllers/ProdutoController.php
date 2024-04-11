@@ -22,6 +22,14 @@ class ProdutoController extends Controller
         return response()->json($produtosComImagem);
     }
 
+    public function retornarTodosProduto()
+    {
+        $produto = Produto::all();
+        return response()->json([
+            ' status' => true,
+            'data' => $produto
+        ]);
+    }
     public function store(Request $request){
 
         $produtoData = $request->all();
